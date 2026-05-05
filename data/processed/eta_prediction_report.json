@@ -1,0 +1,23 @@
+{
+  "dataset_source": "synthetic_last_mile_eta_dataset",
+  "row_count": 1200,
+  "train_row_count": 960,
+  "test_row_count": 240,
+  "baseline_model": {
+    "name": "linear_regression",
+    "mae": 1.1816,
+    "rmse": 1.393,
+    "p90_abs_error": 2.2674
+  },
+  "candidate_model": {
+    "name": "random_forest_regressor",
+    "mae": 1.4056,
+    "rmse": 1.7594,
+    "p90_abs_error": 2.8575
+  },
+  "best_model": "linear_regression",
+  "best_model_mae": 1.1816,
+  "best_model_rmse": 1.393,
+  "best_model_p90_abs_error": 2.2674,
+  "report_artifact": "/Users/flaviagaia/Documents/CV_FLAVIA_CODEX/eta-prediction-last-mile/data/processed/eta_prediction_report.json"
+}
