@@ -4,7 +4,7 @@
 
 ### Visão geral
 
-`eta-prediction-last-mile` é um projeto de previsão de tempo de entrega para última milha, inspirado em uma pergunta comum de entrevista: **como prever ETA usando sinais operacionais e de demanda**.
+`eta-prediction-last-mile` é um projeto de previsão de tempo de entrega para última milha focado em estimar ETA usando sinais operacionais e de demanda.
 
 O projeto compara dois modelos:
 
@@ -65,7 +65,7 @@ O `P90` é importante porque o usuário sente os atrasos de cauda com muito mais
 
 ### Contrato do relatório
 
-O artefato [eta_prediction_report.json](/Users/flaviagaia/Documents/CV_FLAVIA_CODEX/eta-prediction-last-mile/data/processed/eta_prediction_report.json) guarda:
+O artefato [eta_prediction_report.json](data/processed/eta_prediction_report.json) guarda:
 
 - tamanho de treino e teste
 - métricas da baseline linear
@@ -82,10 +82,10 @@ O artefato [eta_prediction_report.json](/Users/flaviagaia/Documents/CV_FLAVIA_CO
 
 ### Arquivos principais
 
-- [main.py](/Users/flaviagaia/Documents/CV_FLAVIA_CODEX/eta-prediction-last-mile/main.py)
-- [src/data_factory.py](/Users/flaviagaia/Documents/CV_FLAVIA_CODEX/eta-prediction-last-mile/src/data_factory.py)
-- [src/modeling.py](/Users/flaviagaia/Documents/CV_FLAVIA_CODEX/eta-prediction-last-mile/src/modeling.py)
-- [tests/test_project.py](/Users/flaviagaia/Documents/CV_FLAVIA_CODEX/eta-prediction-last-mile/tests/test_project.py)
+- [main.py](main.py)
+- [src/data_factory.py](src/data_factory.py)
+- [src/modeling.py](src/modeling.py)
+- [tests/test_project.py](tests/test_project.py)
 
 ### Como executar
 
@@ -95,15 +95,12 @@ python3 -m unittest discover -s tests -v
 python3 -m py_compile main.py src/data_factory.py src/modeling.py tests/test_project.py
 ```
 
-### Como defender em entrevista
-
-> Para ETA, eu começaria com um benchmark forte e interpretável, usando distância, preparo, espera do entregador e contexto operacional. Depois compararia modelos por MAE e P90, porque não basta acertar em média.
 
 ## English
 
 ### Overview
 
-`eta-prediction-last-mile` is a last-mile ETA prediction project built around a common interview question: **how to predict delivery ETA using operational and demand signals**.
+`eta-prediction-last-mile` is a last-mile ETA prediction project focused on estimating delivery ETA using operational and demand signals.
 
 The project compares two models:
 
@@ -149,7 +146,7 @@ This shows:
 
 ### Report contract
 
-The artifact [eta_prediction_report.json](/Users/flaviagaia/Documents/CV_FLAVIA_CODEX/eta-prediction-last-mile/data/processed/eta_prediction_report.json) stores:
+The artifact [eta_prediction_report.json](data/processed/eta_prediction_report.json) stores:
 
 - train/test size
 - linear baseline metrics
@@ -166,10 +163,10 @@ The artifact [eta_prediction_report.json](/Users/flaviagaia/Documents/CV_FLAVIA_
 
 ### Main files
 
-- [main.py](/Users/flaviagaia/Documents/CV_FLAVIA_CODEX/eta-prediction-last-mile/main.py)
-- [src/data_factory.py](/Users/flaviagaia/Documents/CV_FLAVIA_CODEX/eta-prediction-last-mile/src/data_factory.py)
-- [src/modeling.py](/Users/flaviagaia/Documents/CV_FLAVIA_CODEX/eta-prediction-last-mile/src/modeling.py)
-- [tests/test_project.py](/Users/flaviagaia/Documents/CV_FLAVIA_CODEX/eta-prediction-last-mile/tests/test_project.py)
+- [main.py](main.py)
+- [src/data_factory.py](src/data_factory.py)
+- [src/modeling.py](src/modeling.py)
+- [tests/test_project.py](tests/test_project.py)
 
 ### How to run
 
@@ -178,7 +175,3 @@ python3 main.py
 python3 -m unittest discover -s tests -v
 python3 -m py_compile main.py src/data_factory.py src/modeling.py tests/test_project.py
 ```
-
-### Interview framing
-
-> For ETA, I would start with a strong and interpretable benchmark using distance, prep time, courier wait, and operational context. Then I would compare models with MAE and P90 because average performance alone is not enough.

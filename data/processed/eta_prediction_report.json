@@ -19,5 +19,5 @@
   "best_model_mae": 1.1816,
   "best_model_rmse": 1.393,
   "best_model_p90_abs_error": 2.2674,
-  "report_artifact": "/Users/flaviagaia/Documents/CV_FLAVIA_CODEX/eta-prediction-last-mile/data/processed/eta_prediction_report.json"
+  "report_artifact": "data/processed/eta_prediction_report.json"
 }
